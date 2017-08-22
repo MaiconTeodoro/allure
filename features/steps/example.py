@@ -6,7 +6,6 @@ def step_impl(context):
 
 @when('we implement {number:d} tests')
 def step_impl(context, number):  # -- NOTE: number is converted into integer
-    number = -1
     assert number > 1 or number == 0
     context.tests_count = number
 
